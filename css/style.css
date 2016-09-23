@@ -1,0 +1,901 @@
+/*HOMEPAGE*/
+
+/* STANDARD STYLES*/ 
+
+html, body{
+   overflow-x: hidden;
+ }
+ body {
+   font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+   color:#333333;
+}
+/*This doesn't work for some reason I had to duplicate these and add them to each individual H section below!*/
+
+h2, h3, h5, h6 {
+   font-family: "Roboto Slab", serif;
+    color:#3abb92;
+    text-align: center;
+    list-style-type: none;
+ }
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 0px;    
+}
+
+h3 { 
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-family: "Raleway", Tahoma, Verdana, sans-serif;
+    font-size: 21px;
+    color: #f7f7f7;
+    font-weight: bold;
+    text-align: center;  
+    position: relative;
+    list-style-type: none;
+}
+
+h5 {
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    bottom: 140;
+}
+
+/* GRID */
+
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+ }
+ .container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+ .one-half, .one-third, .one-fourth {
+    float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
+ }
+
+/* MEDIA QUERIES*/
+
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+/* HEADER */
+
+ header {
+   background: #99CC99;
+   background-image:linear-gradient(#73A481, #99CC99);
+ }
+
+header nav {
+   padding:1em 0;
+ }
+
+header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ } 
+
+ header nav ul > li.btn-outline {
+   padding: 10px 15px;
+   border: 20px, solid, black; /*doesn't show border*/
+   border-radius: 4px;
+    text-decoration: none;
+ } 
+
+header nav ul > li.btn-outline:hover {
+   background:#f7f7f7;
+ }
+
+header nav ul > li > a {
+   color:#f7f7f7;
+   text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    size: 20px;
+ }
+
+ header nav ul > li.btn-outline:hover > a {
+   color:#73A481;
+ }
+
+/* HERO */
+
+ header .hero {
+   text-align: center;
+   display:block;
+   position: relative;
+ }
+
+ header .hero h1 {
+   font-size:48px;
+   font-weight: bold;
+   margin:95px 0 0;
+     font-family: "Roboto Slab", Tahoma, Verdana, serif;
+     text-align: center;
+    color: #f7f7f7;
+ }
+
+ header .hero p {
+   font-size: 28px;
+   line-height: 30px;
+   font-weight: 100;
+   margin:10px 0 40;
+    
+ }
+
+ header .hero img {
+   display: block;
+   margin:3em auto 0;
+ }
+
+/* BUTTON */
+
+.btn {
+   border-radius: 4px;
+   color:#F7F7F7;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   background-color: #2DB4F0;
+   border: 2px solid #2DB4F0;
+   box-shadow: 0px 2px 0px 0px #2DB4F0;
+ }
+
+/*FEATURES SECTION*/
+
+/*features don't align to center! :( */
+.features {
+    text-align: center;
+    background-color: #f7f7f7;
+    display: block;
+    position: relative;
+    list-style-type: none; /* list style type here doesn't work!*/
+}
+
+/*ADDED*/
+.features ul {
+   margin: 0 auto;
+   padding:4em 0;
+ }
+ .features ul li {
+   list-style-type: none;
+   display: block;
+    text-align: center;
+ }
+
+ .features i {
+   margin:0;
+   vertical-align: middle;
+    list-style-type: none;
+ }
+
+#f1 {
+    float: left;
+    margin-top: 0px;
+}
+
+#first-feature {
+    color: #99cc99;
+    font-size: 192.6px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.f1-text {
+    float: left;
+    margin-top: -200px;
+    margin-left:270px;
+    width: 390px;
+    padding-bottom: -50px;
+}
+
+#f2 {
+    float: right;
+    list-style-type: none;
+}
+
+#second-feature {
+    color: #73a481;
+    font-size: 199.4px;
+    float: right;
+    margin-top: 280px;
+    margin-right: 50px;
+}
+
+.f2-text {
+    margin-top: -190px;
+    margin-right: 320px;
+    width: 390px;
+    float: right;
+}
+
+#f3 {
+    float: left;
+    margin-top: 7px;
+}
+
+#third-feature {
+    color: #54795e;
+    font-size: 186.73px;
+    float: left;
+    margin-top: 530px;
+    margin-left: -350px;
+    list-style-type: none;
+}
+
+.f3-text {
+    float: left;
+    margin-top: 500px;
+    margin-left: -120px;
+    width: 390px;
+    padding-bottom: -50px;
+}
+
+/*ADDED*/
+.features p {
+    font-size: 21px;
+    color: #000000;
+    list-style-type: none;
+}
+
+/* TESTIMONIALS SECTION*/
+
+.testimonials {
+    background-color: #E2E2E2;
+}
+.testimonials .container h2 p { /*trying to target paragraph under Who uses Blocbox?*/
+    size: 20px;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 9px solid yellow;
+    color: red;
+}
+/*UNSURE ABOUT IMAGE POSITIONING*/
+
+.one-fourth {
+    display: inline-block;
+    margin: 40px;
+    list-style-type: none;
+    background-color: #f7f7f7;
+    height: 465px;
+    width: 270px;
+}
+.one-fourth img {
+    width: 270px;
+    height: 207px;
+    margin: none;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+}
+.one-fourth p, blockquote {
+    size: 17px;
+    text-align: center;
+    background-color:#f7f7f7;
+    border: none;
+    align-content: center;
+}
+blockquote {
+    border: 10px solid blue;
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: -100px;
+    margin: 0,
+    /*UNSURE OF HOW TO POSITION BLOCKQUOTES IN TIERS*/
+}
+
+.one-fourth p {
+    position: absolute;
+    margin: 30px;
+    padding: 30px;
+}
+.one-fourth .fourth-name {
+    align-content: center;
+    position: relative;
+}
+/* PRICING SECTION*/
+
+.pricing {
+    display: block;
+    height: 730px;
+    background-color: #f7f7f7;
+    list-style-type: none; /*list style type here doesn't work!*/
+}
+.pricing .container p {
+    size: 20px;
+    position: relative;
+    text-align: center;
+    align-self: center;
+}
+
+.pricing > li {
+    position: relative;
+    
+}
+.pricing li li {
+    color: black;
+    size: 18px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    position: relative;
+    bottom: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+.box-left {
+    border: 10px solid #99cc99;
+    border-radius: 10px;
+     width: 360px;
+    height: 455px;
+    list-style-type: none;
+}
+.box-left h4 {
+    background-color: #99cc99;
+    height: 60px;
+    position: relative;
+    top: -30px;
+}
+.box-middle {
+    border: 10px solid #73a481;
+    border-radius: 10px;
+     width: 360px;
+    height: 495px;
+    list-style-type: none;
+    position: relative;
+    bottom: 20px;
+}
+.box-middle h4 {
+    background-color: #73a481;
+        height: 60px;
+    position: relative;
+    top: -30px;
+}
+.box-right { /*not showing!*/
+    border: 10px solid #54795e;
+    border-radius: 10px;
+     width: 360px;
+    height: 455px;
+     list-style-type: none;
+}
+.box-right h4 { 
+background-color: #54795e;
+        height: 60px;
+    position: relative;
+    top: -30px;
+}
+.box-left h5 /*FREE*/{
+    font-size: 65px;
+}
+
+.box-middle h5 /*5*/ {
+    font-size: 65px;
+}
+
+.box-right h5 /*10*/ {
+    font-size: 65px;
+}
+
+span /*$*/ {
+    font-size: 32px;
+}
+
+.box .month /* MONTH*/ {
+    font-size: 20px;
+}
+
+.pricing .one-third {
+    width: 360px;
+    height: 455px;
+}
+.pricing .btn {
+     color: #f7f7f7;
+    background-color: #2DB4F0;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: -20px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px, 2px, 1px, -1px, rgba(0, 0, 0, 0.4);
+    align-items: center;
+    display: inline-block;
+    margin: 20px;
+}
+#professional-tier {
+    position: relative;
+}
+#professional-tier .btn {
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* CTA Sign Up Section */
+
+.calltoaction {
+     display:block;
+    background-image:linear-gradient(#99CC99,#73A481);
+    margin: none;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+#panel {
+     display:block;
+    background-color: #f7f7f7;
+    border 10px solid pink;
+}
+
+.social-media-sign-up {
+    border: 10px solid red;
+}
+#btn-fb {
+    font-family: "Raleway", sans-serif;
+    background-color: #3b5998;
+    color: #f7f7f7;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    top: -10px;
+    right: 700px;
+    width: 200px;
+    float: right;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px, 2px, 1px, -1px, rgba(0, 0, 0, 0.4);
+    align-items: center;
+    display: inline-block;
+}
+
+#btn-twitter {
+    font-family: "Raleway", sans-serif;
+    background-color: #4099ff;
+    color: #f7f7f7;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    top: -10px;
+    left: 600px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px, 2px, 1px, -1px, rgba(0, 0, 0, 0.4);
+    align-content: center;
+    display: inline-block;
+}
+
+.separators {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sep1 {
+    width: 500px;
+    height: 10px;
+    color: black;
+}
+
+.sep2 {
+    width: 500px;
+    height: 10px;
+    color: black;
+}
+.email-sign-up {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: #f7f7f7;
+}
+.email-input-field {
+    display: block;
+    color: aqua;
+    width: 550px;
+    height: 40px;
+    margin-bottom: 40px;
+    border: 3px solid black;
+    border-radius: 4px;
+    position: relative;
+    top: 40px;
+}
+.pword-input-field {
+    display: block;
+    color: red;
+    width: 550px;
+    height: 40px;
+    margin-bottom: 40px;
+    border: 3px solid black;
+    border-radius: 4px;
+    
+}
+
+.panel p {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+     
+.panel .span {
+    color: #3abb92;
+    font-weight: bold;
+}
+ /*FOOTER*/
+
+ footer {
+   background-color: #73a481;
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ footer .right-footer-block {
+   background-color: #54795e;
+ }
+ footer .logo{
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
+ }
+
+ /* DASHBOARD */
+
+ .dashboard {
+   background:#F7F7F7;
+ }
+
+ .left-nav {
+   height: 100vh;
+   width:14.66666667%;
+   color:red;
+   background: #54795e;
+   background-image: linear-gradient(206deg, #73a481 0%, #99cc99 94%);
+   float:left;
+   position: fixed;
+   display:block;
+ }
+
+ .left-nav .site-logo {
+   padding:20px 0;
+   background:#54795e;
+   display:block;
+   text-align: center;
+ }
+
+ .left-nav .items {
+   padding:0 6%;
+ }
+
+ .left-nav .items p {
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 12px;
+   color: #f7f7f7;
+   line-height: 15px;
+ }
+
+ .left-nav .items ul {
+   margin:0 0 40px;
+   padding:0;
+ }
+
+ .left-nav .items ul li {
+   list-style-type: none;
+   margin-bottom: 15px;
+ }
+
+ .left-nav .items ul li a {
+   text-decoration: none;
+   font-weight: 100;
+   color:#F7F7F7;
+ }
+
+ .left-nav .items ul li a i {
+   width:16px;
+   text-align: center;
+   margin-right:8px;
+ }
+
+.active {
+    background-color: #54794e;
+}
+
+/* LEFT NAVBAR SETTINGS */
+
+ .left-nav .settings {
+   position:absolute;
+   background:#54795e;
+   width:100%;
+   bottom:0;
+   left:0;
+   right:0;
+   padding:10px 0;
+ }
+
+ .left-nav .settings img {
+   height:35px;
+   width:35px;
+   border-radius: 50%;
+   margin-left:10px;
+   display: inline-block;
+ }
+
+ .left-nav .settings p {
+   display: inline-block;
+   vertical-align: top;
+   padding-top: 8px;
+   font-weight: 400;
+   margin:0 0 0 10px;
+ }
+
+ .left-nav .settings a {
+   color:#F7F7F7;
+   text-decoration: none;
+   text-align: right;
+   float: right;
+   margin-right:10px;
+   margin-top:8px;
+ }
+
+ /* CONTENT */
+
+ .content {
+   padding:6em 1% 1.5em;
+   float:right;
+   width:98%;
+   position: relative;
+ }
+
+ .content .header {
+   margin:0 1% 20px;
+ }
+
+ .content .header h1 {
+   font-family: "Roboto Slab", Times New Roman, serif;
+   font-weight: 700;
+   margin:0 0 30px;
+   font-size: 36px;
+   color: #3abb92;
+   line-height: 44px;
+   float: left;
+   display:inline-block;
+ }
+
+ .content .header > a {
+   float:right; 
+   border: 1px solid #2db4F0;   
+   border-radius: 3px;
+   background: #2db4F0;
+   color: #f7f7f7;
+   text-decoration: none;
+   text-align: center; 
+   font-size: 16px;
+   font-weight: bold;
+   font-family: "Raleway", Tahoma, sans-serif;
+   margin:0 25px 0 0; 
+ }
+
+ .content-item {
+   width:96%;
+   margin:0 2% 25px;
+   float:left;
+   display:block;
+ }
+
+ .item-box {
+   display:block;
+   height:230px;
+   background: #FFFFFF;
+   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+   position: relative;
+   overflow: hidden;
+   padding:20px;
+ }
+
+#add-box {
+    border: 5px solid #2db4F0;
+   margin:0 25px 0 0; 
+}
+
+#add-box > p {
+    color: #2db4F0;
+    text-decoration: none;
+   text-align: center; 
+   font-size: 48px;
+   font-weight: bold;
+   font-family: "Raleway", Tahoma, sans-serif;
+    margin: auto;
+}
+
+/*MEDIA QUERIES*/
+
+/* Larger Mobile Devices */
+
+ @media (min-width:460px) {
+   .content {
+     padding:1.5em 1%;
+     float:right;
+     width:90%;
+     position: relative;
+   }        
+   .content-item {
+     width:46%;
+     margin:0 2% 25px;
+     float:left;
+     display:block;
+   }
+ }
+
+/* Tablets */
+
+ @media (min-width:768px) {
+   .content {
+     padding:1.5em 5%;
+     float:right;
+     width:90%;
+     position: relative;
+   }
+   .content > .container {
+     width:700px;
+   }
+   .content-item {
+     width:31.33333%;
+     margin:0 1% 25px;
+   }
+ }
+
+/* Laptops and Desktops */
+
+ @media (min-width:992px) {
+   .content {
+     padding:1.5em 1%;
+     float:right;
+     width:83.33333333%;
+     position: relative;
+   }
+   .content > .container {
+     width:auto;
+   }
+   .content-item {
+     width:23%;
+     margin:0 1% 25px;
+   }
+ }
+
+/*CONTENT ITEMS*/
+
+ .item-box > img {
+   position:absolute;
+   height:100%;
+   width:auto;
+   top:0;
+   left:0;
+   right:0;
+ }
+
+ .item-box h2 {
+   font-family: "Roboto Slab", Times New Roman, serif;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 17px;
+   margin:0;
+    color: #3abb92;
+ }
+
+ .item-box h2 a {
+   color: #3abb92;
+   text-decoration: none;
+ }
+
+ .item-box h2 img {
+   width:16px;
+   height:16px;
+   position:relative;
+   top:2px;
+   margin-right:5px;
+ }
+
+ .item-box p {
+   font-size: 14px;
+   font-family: "Raleway", Arial, sans-serif;
+   text-align: justify;
+   color: #333333;
+   line-height: 18px;
+   margin: 5px, 0, 0;
+ }
+
+/*ADD BUTTON*/
+
+/*ADD BOX*/
