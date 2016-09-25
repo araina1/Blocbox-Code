@@ -75,7 +75,7 @@ h5 {
    margin:0 2% 20px;
  }
 
-/* MEDIA QUERIES*/
+/* HOMEPAGE MEDIA QUERIES*/
 
  @media (min-width: 768px) {
    .container {
@@ -637,9 +637,10 @@ margin-right: auto;
  }
 
  .left-nav {
+   font-family: "Raleway", Arial, sans-serif;
    height: 100vh;
    width:14.66666667%;
-   color:red;
+   color: #f7f7f7;
    background: #54795e;
    background-image: linear-gradient(206deg, #73a481 0%, #99cc99 94%);
    float:left;
@@ -689,7 +690,7 @@ margin-right: auto;
  }
 
 .active {
-    background-color: #54794e;
+    background-color: #6e9e7b;
 }
 
 /* LEFT NAVBAR SETTINGS */
@@ -753,6 +754,14 @@ margin-right: auto;
    display:inline-block;
  }
 
+.delete {
+    float: right;
+    font-size: 30px;
+    color: #54795e;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+
  .content .header > a {
    float:right; 
    border: 1px solid #2db4F0;   
@@ -764,7 +773,7 @@ margin-right: auto;
    font-size: 16px;
    font-weight: bold;
    font-family: "Raleway", Tahoma, sans-serif;
-   margin:0 25px 0 0; 
+   margin: 0; 
  }
 
  .content-item {
@@ -786,20 +795,26 @@ margin-right: auto;
 
 #add-box {
     border: 5px solid #2db4F0;
-   margin:0 25px 0 0; 
-}
-
-#add-box > p {
-    color: #2db4F0;
+    margin:0 25px 0 0;
+    text-decoration-color: #2db4F0;
     text-decoration: none;
-   text-align: center; 
-   font-size: 48px;
-   font-weight: bold;
-   font-family: "Raleway", Tahoma, sans-serif;
+    text-align: center; 
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Raleway", Tahoma, sans-serif;
     margin: auto;
 }
 
-/*MEDIA QUERIES*/
+#add-box > a {
+   color: #2db4F0;
+   text-decoration: none;
+   text-align: center; 
+   font-weight: bold;
+   font-family: "Raleway", Arial, sans-serif;
+   margin: 100px 20px;
+}
+
+/*DASHBOARD MEDIA QUERIES*/
 
 /* Larger Mobile Devices */
 
@@ -871,6 +886,7 @@ margin-right: auto;
    font-size: 15px;
    line-height: 17px;
    margin:0;
+    text-align: left;
     color: #3abb92;
  }
 
@@ -893,9 +909,5 @@ margin-right: auto;
    text-align: justify;
    color: #333333;
    line-height: 18px;
-   margin: 5px, 0, 0;
+   margin: 5px 0 0;
  }
-
-/*ADD BUTTON*/
-
-/*ADD BOX*/
