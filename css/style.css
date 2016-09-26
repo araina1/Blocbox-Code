@@ -185,6 +185,7 @@ header nav ul > li > a {
 /* BUTTONS */
 
 .btn {
+   font-family: "Raleway", Helvetica, Arial, sans-serif;
    border-radius: 4px;
    color:#F7F7F7;
    font-weight: 700;
@@ -400,151 +401,137 @@ header nav ul > li > a {
 
 /* CTA Sign Up Section */
 
-.calltoaction {
-     display:block;
-    background-image:linear-gradient(#99CC99,#73A481);
-    margin: none;
-    font-family: "Raleway", sans-serif;
-    
+.cta {
+    display: block;
 }
-
-#panel {
-     display:block;
-    background-color: #f7f7f7;
-    border 10px solid pink;
-}
-
-.social-media-sign-up {
-    border: 10px solid red;
-}
-#btn-fb {
-    font-family: "Raleway", sans-serif;
-    background-color: #3b5998;
-    color: #f7f7f7;
-    font-size: 16px;
-    font-weight: bold;
+.cta p {
     text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    position: relative;
-    top: -10px;
-    right: 700px;
-    width: 200px;
-    float: right;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px, 2px, 1px, -1px, rgba(0, 0, 0, 0.4);
-    align-items: center;
-    display: inline-block;
+}
+
+.smsignin {
+    margin-left: 400px;   
+}
+
+.f-icon, .t-icon {
+    color: #f7f7f7;
+    float: left;
+    position: absolute;
+    margin-top: 13px;
+}
+
+.f-icon {
+    margin-left: 10px;
+}
+ 
+.t-icon {
+    margin-left: 260px;
+}
+
+.fbsignin {
+    text-align: center;
+}
+
+.twsignin {
+    text-align: center;
+}
+
+#btn-fb {
+ background: #3b5998;    
+ border: 2px solid #3b5998;
+ box-shadow: 0px 2px 0px 0px #3b5998;
+ display: inline-block;
+ margin-right: 10px;    
+ 
 }
 
 #btn-twitter {
-    font-family: "Raleway", sans-serif;
-    background-color: #4099ff;
-    color: #f7f7f7;
-    font-size: 16px;
+ background: #4099ff;  
+ border: 2px solid #4099ff; 
+ box-shadow: 0px 2px 0px 0px #4099ff;
+ display: inline-block;
+ margin-left: 10px;
+}
+
+.dividers {
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
-    padding: 20px;
     position: relative;
-    top: -10px;
-    left: 600px;
+}
+
+.email-signup {
+    align-content: left;
+}
+
+.email-if, .pword-if {
+    height: 50px;
     width: 200px;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px, 2px, 1px, -1px, rgba(0, 0, 0, 0.4);
-    align-content: center;
-    display: inline-block;
+    border: 5px solid black;
 }
 
-.separators {
-    font-size: 20px;
-    color: black;
+.currentaccount {
     font-weight: bold;
-    text-align: center;
-}
-
-.sep1 {
-    width: 500px;
-    height: 10px;
-    color: black;
-}
-
-.sep2 {
-    width: 500px;
-    height: 10px;
-    color: black;
-}
-.email-sign-up {
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
-    background-color: #f7f7f7;
-}
-.email-input-field {
-    display: block;
-    color: aqua;
-    width: 550px;
-    height: 40px;
-    margin-bottom: 40px;
-    border: 3px solid black;
-    border-radius: 4px;
-    position: relative;
-    top: 40px;
-}
-.pword-input-field {
-    display: block;
-    color: red;
-    width: 550px;
-    height: 40px;
-    margin-bottom: 40px;
-    border: 3px solid black;
-    border-radius: 4px;
-    
-}
-
-.panel p {
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-     
-.panel .span {
     color: #3abb92;
-    font-weight: bold;
 }
  /*FOOTER*/
 
  footer {
-   background-color: #73a481;
+   background-color: #73A481;
+   background-image: linear-gradient(to top,
+   #54795e 0%, #54795e 50%, #73A481 50%, #73A481 100%);
    color: #FFFFFF;
    height: 150px;
    position: relative;
    overflow: hidden;
    z-index: 0;
  }
+
  footer p, footer nav ul {
    font-size:14px;
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
  }
+
  footer nav ul li {
    list-style-type: none;
    display: inline;
  }
+
  footer nav ul li a {
    color:#FFFFFF;
    text-decoration: none;
  }
+
  footer .right-footer-block {
-   background-color: #54795e;
+   background-color: transparent;
  }
- footer .logo{
+
+ footer .logo {
    padding: 2.35em 0;
    margin: 0 auto;
    display: block;
+ }
+
+/* FOOTER MEDIA QUERIES*/
+
+ @media (min-width: 992px){
+   footer{
+     background-color: #54795e;
+     background-image: linear-gradient(to left,
+        #54795e 0%, #54795e 33.33337%, #73A481 33.33337%, #73A481 100%);
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #54795e;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+       margin-left: 140px;
+   }
  }
 
  /* DASHBOARD */
