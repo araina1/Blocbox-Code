@@ -540,6 +540,80 @@ header nav ul > li > a {
    background:#F7F7F7;
  }
 
+.left-nav {
+  height: 100%;
+  width: 200px;
+  color: #FFFFFF;
+  background:#54795e;    
+  background-image: linear-gradient(206deg, #73a481 0%, #54795e 94%);    
+  float: left;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-280px,0);
+  -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+  -o-transform: translate(-280px,0); /** Opera **/
+  -moz-transform: translate(-280px,0); /** Firefox **/
+ }
+
+ .left-nav.open {
+   display:block;
+   width:280px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+   -webkit-transform: translate(0,0); /** Chrome & Safari **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
+   z-index: 100;
+ }
+
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#54795e;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+ }
+
+/* RESPONSIVE DESIGN WITH HAMBURGER ICON*/
+
+ @media (min-width:992px) {
+   .left-nav {
+     height: 100vh;
+     width:14.66666667%;
+     color:#FFFFFF;
+     background: #54795e;
+     background-image: linear-gradient(206deg, #73a481 0%, #54795e 94%);
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
+   }
+ }
+
  .left-nav {
    font-family: "Raleway", Arial, sans-serif;
    height: 100vh;
@@ -665,20 +739,6 @@ header nav ul > li > a {
     margin-top: 5px;
     margin-right: 40px;
 }
-
- .content .header > a {
-   float:right; 
-   border: 1px solid #2db4F0;   
-   border-radius: 3px;
-   background: #2db4F0;
-   color: #f7f7f7;
-   text-decoration: none;
-   text-align: center; 
-   font-size: 16px;
-   font-weight: bold;
-   font-family: "Raleway", Tahoma, sans-serif;
-   margin: 0; 
- }
 
  .content-item {
    width:96%;
