@@ -25,14 +25,14 @@ h2 {
     font-weight: normal;
     text-align: center;
     font-size: 36px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 0px;    
 }
 
 h3 { 
     font-weight: normal;
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -193,100 +193,46 @@ header nav ul > li > a {
    background: #2DB4F0;
    border: 2px solid #2DB4F0;
    box-shadow: 0px 2px 0px 0px #2DB4F0;
+    float: left;
  }
 
 /*FEATURES SECTION*/
 
-/*features don't align to center! :( */
 .features {
     text-align: center;
     background-color: #f7f7f7;
     display: block;
     position: relative;
-    list-style-type: none; /* list style type here doesn't work!*/
 }
 
-/*ADDED*/
 .features ul {
    margin: 0 auto;
    padding:4em 0;
  }
+
  .features ul li {
    list-style-type: none;
-   display: block;
-    text-align: center;
+   display: inline-block;
  }
 
- .features i {
-   margin:0;
+.features i {
+   font-size:60px;
+   margin:40px 0 0 0;
    vertical-align: middle;
-    list-style-type: none;
  }
 
 #f1 {
-    float: left;
-    margin-top: 0px;
-}
-
-#first-feature {
     color: #99cc99;
-    font-size: 192.6px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 50px;
-}
-
-.f1-text {
-    float: left;
-    margin-top: -200px;
-    margin-left:270px;
-    width: 390px;
-    padding-bottom: -50px;
 }
 
 #f2 {
-    float: right;
-    list-style-type: none;
-}
-
-#second-feature {
     color: #73a481;
-    font-size: 199.4px;
-    float: right;
-    margin-top: 280px;
-    margin-right: 50px;
-}
-
-.f2-text {
-    margin-top: -190px;
-    margin-right: 320px;
-    width: 390px;
-    float: right;
 }
 
 #f3 {
-    float: left;
-    margin-top: 7px;
-}
-
-#third-feature {
     color: #54795e;
-    font-size: 186.73px;
-    float: left;
-    margin-top: 530px;
-    margin-left: -350px;
-    list-style-type: none;
 }
 
-.f3-text {
-    float: left;
-    margin-top: 500px;
-    margin-left: -120px;
-    width: 390px;
-    padding-bottom: -50px;
-}
-
-/*ADDED*/
 .features p {
     font-size: 21px;
     color: #000000;
@@ -296,190 +242,161 @@ header nav ul > li > a {
 /* TESTIMONIALS SECTION*/
 
 .testimonials {
-    background-color: #E2E2E2;
-}
-.testimonials .container h2 p { /*trying to target paragraph under Who uses Blocbox?*/
-    size: 20px;
+    background: #E2E2E2;
+    padding:4em 0;
     text-align: center;
-    position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border: 9px solid yellow;
-    color: red;
-}
-/*UNSURE ABOUT IMAGE POSITIONING*/
-
-.one-fourth {
-    display: inline-block;
-    margin: 40px;
-    list-style-type: none;
-    background-color: #f7f7f7;
-    height: 465px;
-    width: 270px;
-}
-.one-fourth img {
-    width: 270px;
-    height: 207px;
-    margin: none;
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-}
-.one-fourth p, blockquote {
-    size: 17px;
-    text-align: center;
-    background-color:#f7f7f7;
-    border: none;
-    align-content: center;
-}
-blockquote {
-    border: 10px solid blue;
-    width: 270px;
-    height: 120px;
-    display: inline-block;
-    position: absolute;
-    top: 60px;
-    right: -100px;
-    margin: 0,
-    /*UNSURE OF HOW TO POSITION BLOCKQUOTES IN TIERS*/
 }
 
-.one-fourth p {
-    position: absolute;
-    margin: 30px;
-    padding: 30px;
+.testimonials h2 {
+   margin-top: -20px;
+ }
+
+ .testimonials ul li {
+   list-style-type: none;
+ }
+
+ .testimonials.t3 {
+    margin-top: 0.5px;
 }
-.one-fourth .fourth-name {
-    align-content: center;
-    position: relative;
+
+.testimonials.t4 {
+    margin-top: 0.5px;
 }
+
+ .testimonials blockquote {
+   color:#333333;  
+   text-align: center;     
+   font-style: normal;
+   background: #f7f7f7;
+   position: absolute;
+   padding:10px 0 0 0;
+   width:auto;
+   margin:226px 30px 0 30px;
+ }
+
+ .testimonials img {
+   height: 482px;
+   width: 276px;
+   border-radius: 5px;
+   float: left;
+   display: inline-block;
+   margin: 20px 10px 0 0;
+ }
+
+ .testimonials p.name {
+   display: inline-block;
+   text-align: center;
+   font-size:13px;
+   font-weight: bold;     
+   margin-top: -90px;
+ }
+
 /* PRICING SECTION*/
 
 .pricing {
-    display: block;
-    height: 730px;
-    background-color: #f7f7f7;
-    list-style-type: none; /*list style type here doesn't work!*/
+    background: #f7f7f7;
+    background-size:cover;
+    text-align: center;
+    padding:4em 0;
+    list-style-type: none;
 }
-.pricing .container p {
+
+.pricing p {
     size: 20px;
-    position: relative;
-    text-align: center;
-    align-self: center;
 }
 
-.pricing > li {
-    position: relative;
-    
+.pricing ul {
+    margin:0 auto;
+    padding:2em 0;
 }
-.pricing li li {
-    color: black;
-    size: 18px;
-    padding-bottom: 30px;
-    padding-left: 60px;
-    position: relative;
-    bottom: 220px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.pricing ul li {
     list-style-type: none;
 }
 
-.box-left {
-    border: 10px solid #99cc99;
-    border-radius: 10px;
-     width: 360px;
-    height: 455px;
-    list-style-type: none;
-}
-.box-left h4 {
-    background-color: #99cc99;
-    height: 60px;
-    position: relative;
-    top: -30px;
-}
-.box-middle {
-    border: 10px solid #73a481;
-    border-radius: 10px;
-     width: 360px;
-    height: 495px;
-    list-style-type: none;
-    position: relative;
-    bottom: 20px;
-}
-.box-middle h4 {
-    background-color: #73a481;
-        height: 60px;
-    position: relative;
-    top: -30px;
-}
-.box-right { /*not showing!*/
-    border: 10px solid #54795e;
-    border-radius: 10px;
-     width: 360px;
-    height: 455px;
-     list-style-type: none;
-}
-.box-right h4 { 
-background-color: #54795e;
-        height: 60px;
-    position: relative;
-    top: -30px;
-}
-.box-left h5 /*FREE*/{
-    font-size: 65px;
+ .box {
+   padding:0 15px 15px;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   min-height: 439px;
+   position: relative;
+   margin-top: 25px;
+   border-radius: 10px;
+ }
+
+ .box.middle {
+   min-height: 485px;
+   margin-top:0px;
+ }
+
+#free-tier {
+    border: 5px solid #99cc99;
 }
 
-.box-middle h5 /*5*/ {
-    font-size: 65px;
-}
-
-.box-right h5 /*10*/ {
-    font-size: 65px;
-}
-
-span /*$*/ {
-    font-size: 32px;
-}
-
-.box .month /* MONTH*/ {
-    font-size: 20px;
-}
-
-.pricing .one-third {
-    width: 360px;
-    height: 455px;
-}
-.pricing .btn {
-     color: #f7f7f7;
-    background-color: #2DB4F0;
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    position: absolute;
-    bottom: 0px;
-    right: -20px;
-    width: 300px;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px, 2px, 1px, -1px, rgba(0, 0, 0, 0.4);
-    align-items: center;
-    display: inline-block;
-    margin: 20px;
-}
 #professional-tier {
-    position: relative;
+    border: 5px solid #73a481;
 }
-#professional-tier .btn {
-    position: absolute;
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+
+#expert-tier {
+    border: 5px solid #54795e;
 }
+
+.box h4 { 
+   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
+   left:0;
+   right:0;
+   top:0;
+   margin:0 -15px 40px;
+   padding:10px 0;
+ }
+
+.casual {
+    background-color: #99cc99;
+}
+
+.professional {
+    background: #73a481;
+}
+
+.expert {
+    background: #54795e;
+}
+
+ .box h5 {
+   font-size:50px;
+   margin:40px 0 10px;
+ }
+
+ .box h5 span {
+   font-size:32px;
+   vertical-align: top;
+ }
+
+ .box h5 span.month {
+   font-size:20px;
+   vertical-align: middle;
+ }
+
+ .box ul li {
+   font-size:18px;
+   margin-bottom:20px;
+   font-weight: 100;
+ }
+
+ .box .btn {
+   position:absolute;
+   bottom:20px;
+   left:20px;
+   right:20px;
+ }
+
+ .small {
+   font-family: "Raleway", Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #333333;
+   line-height: 15px;
+   font-style:italic;
+ }
 
 /* CTA Sign Up Section */
 
@@ -811,7 +728,7 @@ margin-right: auto;
    text-align: center; 
    font-weight: bold;
    font-family: "Raleway", Arial, sans-serif;
-   margin: 100px 20px;
+   margin-top: 100px 20px;
 }
 
 /*DASHBOARD MEDIA QUERIES*/
