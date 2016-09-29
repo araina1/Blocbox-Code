@@ -25,16 +25,16 @@
             </div> 
             <div class="one-half">
                 <ul>
-                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="Dashboard.html">Sign In</a></li>
                     <li class="btn-outline"><a href="signup.html">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="container hero">
+        <div class="container hero">   
             <h1 class="animated fadeIn">Save.<br/>Share.<br/>Collaborate.<br/></h1>
-            <p>Blocbox lets you collect and sort information.<br/>Create simple notes, store images, and add links.</p>
-            <a href="signup.html" class="btn">START YOUR FREE TRIAL</a>
-            <img src="Blocbox assets/macbook.png" alt="Blocbox" />
+            <p>Blocbox lets you collect and sort information.<br/>Create simple notes, store images, and add links.</p>      
+            <a href="signup.html" class="btn">START YOUR FREE TRIAL</a>      
+            <img class="hero img"src="Blocbox assets/macbook.png" alt="Blocbox"/>
         </div>
     </header>
     <main role="main">
@@ -72,22 +72,22 @@
             <ul class="container">
                 <li class="one-fourth">
                     <blockquote>"Blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier." </blockquote>
-                    <img src="Blocbox assets/Derek avatar image.png" alt="avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg" alt="avatar">
                     <p class="name"><strong>Derek M.<br/>Freelance designer</strong></p>
                 </li>
                 <li class="one-fourth">
                     <blockquote>"With Blocbox, I am able to manage my projects a lot more easily. Content can be saved in real-time which makes the overall process smoother when getting feedback from teammates. I love Blocbox!"</blockquote>
-                    <img src="Blocbox assets/Christine avatar image.png" alt="avatar">
-                    <p class="name"><strong>Christine L.<br/>Software developer</strong></p>
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg" alt="avatar">
+                    <p class="name" id="name2"><strong>Christine L.<br/>Software developer</strong></p>
                 </li>
                 <li class="one-fourth">
                     <blockquote>"Blocbox saves me so much time with its features. The fact that I can immediately see all of my projects that I’ve been working on as soon as I’m logged in makes organization that much more hassle-free!"</blockquote>
-                    <img src="Blocbox assets/Seth avatar image.png" class = "t3" alt="avatar">
-                    <p class="name"><strong>Seth G.<br/>Tax analyst</strong></p>
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ashleyford/128.jpg" id ="img3" alt="avatar">
+                    <p class="name" id="name3"><strong>Seth G.<br/>Tax analyst</strong></p>
                 </li>
-                <li class="one-fourth">
+                <li class="one-fourth" id="test4">
                     <blockquote>"Blocbox is truly effortless - previously my work was scattered across different apps and devices, but now I can finally store everything in a centralized place! It’s an ingenious solution to a common problem."</blockquote>
-                    <img src="Blocbox assets/Rachel avatar image.png" class = "t4" alt="avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg" id="img4" alt="avatar">
                     <p class="name"><strong>Rachel P.<br/>Marketing manager</strong></p>
                 </li>     
             </ul>
@@ -147,39 +147,41 @@
       
         <!--CTA Sign Up Section-->
         
-        <section class = "cta">
-            <div class = "panel">
+        <section class ="cta">
+            <div class ="panel">
                 <h2>Start today</h2>
                 <p>Discover how effortless content storage can be</p>
-                <div class = "smsignin">
-                    <div class = "fbsignin">
-                        <div class = "f-icon"><i class="fa fa-facebook"></i></div>
-                        <a href="https://www.facebook.com/" class="btn" id="btn-fb"><strong>Sign up with Facebook</strong></a>
-                    </div>    
-                    <div class = "twsignin">
-                        <div class = "t-icon"><i class="fa fa-twitter"></i></div>
-                        <a href="https://twitter.com/" class="btn" id="btn-twitter"><strong>Sign up with Twitter</strong></a>
+                <div class ="inputbtns">
+                    <div class="fbbtn">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook" id="fbk"></i><input type="fb" value="Sign up with Facebook"></a>
+                    </div>   
+                    <div class = "twbtn">
+                    <a href="https://twitter.com/"><i class="fa fa-twitter" id="twt"></i><input type="twitter" value="Sign up with Twitter"></a>
                     </div> 
-                </div>
-                <div class = "dividers">OR</div>
-                <div class="email-signup">
-                    <p>E-mail address</p>
-                    <div id="email-if"></div>
-                    <p>Password</p>
-                    <div id ="pword-if"></div>
-                </div>
-                <a href="signup.html" class="start btn"><strong>SIGN UP FOR FREE</strong></a>    
-                <p>Already have an account? <span><strong class="currentaccount">Sign In</strong></span></p>
-            <div/>        
-        <section/>
-    <main/>
+                </div>    
+                <div class ="dividers"><div class="d1"></div>OR<div class="d2"></div></div>                
+                <form>
+                    <div class ="email">
+                        <label class="eadd"><strong>E-mail address</strong></label>
+                        <input type="e-mail" value="E-mail address">
+                    </div>
+                    <div class ="pword">
+                        <label class="Password"><strong>Password</strong></label>
+                        <input type="pword" value="Password">
+                    </div>    
+                </form>
+                <div class="start"><input type="startbtn" value="SIGN UP FOR FREE"></div>
+                <p>Already have an account? <a class="currentaccount" href="Dashboard.html">Sign In</a></p>
+            </div>        
+        </section>
+     </main>
         
         <!-- Footer -->
    
         <footer>
             <div class="container footer-nav-block">
                 <div class="left-footer-block one-third">
-                    <p class="copyright-block">&copy; 2015. <strong>Blocbox</strong> - All Rights Reserved.</p>
+                    <p class="copyright-block">&copy; 2015. <span>Blocbox</span> - All Rights Reserved.</p>
                 </div>
                 <nav class="link-block middle-footer-block one-third">
                     <ul>

@@ -25,7 +25,7 @@
     min-width: 100px;
     list-style: none;
 	padding: 20px;
-	margin: 55px 0 0 0;
+	margin: 25px 0 0 0;
 }
 .dropit .dropit-open .dropit-submenu { 
     display: block;
@@ -62,3 +62,34 @@
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight:100;
  }
+
+/*SETTINGS MENU DROPDOWN*/
+
+.settings.dropit {
+    background-color: transparent;
+    float:none;
+    margin: 0 0 14px 0;
+}
+
+.settings.dropit .dropit-trigger { position: relative; }
+.settings.dropit .dropit-submenu {
+    min-width: 155px;
+    top: -150px;
+    left: 5px;
+    margin: 8px 0 0 0;
+}
+
+.settings .dropit .dropit-open .dropit-submenu:after {
+  border-width: 8px 8px 0px;    
+  top: 138px;
+  right: 22px;      
+ }
+
+/*ADD BUTTON MENU DROPDOWN*/
+
+.extra.dropit .dropit-trigger { position: relative; }
+.extra.dropit .dropit-submenu {
+    margin: 20px;
+    top: 10px;
+    right:5px;
+}

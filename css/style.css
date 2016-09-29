@@ -95,16 +95,22 @@ h5 {
      width:29.33333%;
    }
    .one-fourth {
-     width:21%;
+     width:21%;    
    }
+     footer .logo {
+         padding: 18px 0 0;
+     } 
  }
 
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
    }
+     footer .logo {
+         padding: 2.35em 0;
+     } 
  }
-
+    
 /* HEADER */
 
  header {
@@ -163,7 +169,6 @@ header nav ul > li > a {
    font-weight: bold;
    margin:95px 0 0;
    font-family: "Roboto Slab", Times New Roman, serif;
-   text-align: left;
    color: #f7f7f7;
  }
 
@@ -171,15 +176,13 @@ header nav ul > li > a {
    font-size: 28px;
    line-height: 30px;
    font-weight: 100;
-   margin: 10px 0 40;
-   text-align: left;   
+   margin: 10px 0 40;   
  }
 
  header .hero img {
-   display: inline-block;
+   display: block;
    margin:3em auto 0;
-   margin-left: 0;
-   float: right;
+   margin: 0 auto;
  }
 
 /* BUTTONS */
@@ -193,9 +196,14 @@ header nav ul > li > a {
    padding:10px 30px;
    background: #2DB4F0;
    border: 2px solid #2DB4F0;
-   box-shadow: 0px 2px 0px 0px #2DB4F0;
-    float: left;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   box-sizing: border-box;    
  }
+
+header .btn {
+   position: relative; 
+   top: 5px;
+}
 
 /*FEATURES SECTION*/
 
@@ -204,6 +212,10 @@ header nav ul > li > a {
     background-color: #f7f7f7;
     display: block;
     position: relative;
+}
+
+.features h2 {
+    margin-top: -20px;
 }
 
 .features ul {
@@ -246,6 +258,12 @@ header nav ul > li > a {
     background: #E2E2E2;
     padding:4em 0;
     text-align: center;
+    position: relative;
+    height:582px;
+}
+
+.testimonials .container {
+    position: absolute;
 }
 
 .testimonials h2 {
@@ -256,41 +274,54 @@ header nav ul > li > a {
    list-style-type: none;
  }
 
- .testimonials.t3 {
-    margin-top: 0.5px;
+.one-fourth {
+    height: 482px;
+    width: 276px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    top: 120px;
+    left: 0px;
+    display: inline-block;
+    margin-right:5px;
 }
 
-.testimonials.t4 {
-    margin-top: 0.5px;
+#test4 {
+    float: right;
+    position: relative;
+    left: 40px;
+    top: -382px;
+    margin-right: 0px;
 }
 
- .testimonials blockquote {
-   color:#333333;  
-   text-align: center;     
-   font-style: normal;
-   background: #f7f7f7;
-   position: absolute;
-   padding:10px 0 0 0;
-   width:auto;
-   margin:226px 30px 0 30px;
- }
+.testimonials img {
+    height: 200px;
+    width: 276px;
+    position:absolute;
+    top: -30px;
+    left: 0px;
+}
 
- .testimonials img {
-   height: 482px;
-   width: 276px;
-   border-radius: 5px;
-   float: left;
-   display: inline-block;
-   margin: 20px 10px 0 0;
- }
+blockquote {
+    position:absolute;
+    top: 180px;
+    z-index: 2;
+}
 
- .testimonials p.name {
-   display: inline-block;
-   text-align: center;
-   font-size:13px;
-   font-weight: bold;     
-   margin-top: -90px;
- }
+.name {
+    position:absolute;
+    left: 65px;
+    bottom: 20px;
+
+}
+
+#name2 {
+    left: 60px;
+}
+
+#name3 {
+    left: 100px;
+}
 
 /* PRICING SECTION*/
 
@@ -300,6 +331,12 @@ header nav ul > li > a {
     text-align: center;
     padding:4em 0;
     list-style-type: none;
+    display: block;
+    clear: both;
+}
+
+.pricing h2 {
+    margin-top: -20px;
 }
 
 .pricing p {
@@ -402,76 +439,192 @@ header nav ul > li > a {
 /* CTA Sign Up Section */
 
 .cta {
-    display: block;
+    background-color: #73A481;
+    background-image:linear-gradient(#99cc99, #73A481);
+    background-size:cover;
+    font-family: "Raleway", Arial, sans-serif; 
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    padding:20em;
+    box-sizing: border-box;
 }
+
+.ctp {
+    display: block;
+    position: static;
+    max-width: 900px;
+    max-height: 900px;
+}
+
+
 .cta p {
     text-align: center;
 }
 
-.smsignin {
-    margin-left: 400px;   
-}
-
-.f-icon, .t-icon {
-    color: #f7f7f7;
-    float: left;
+.panel {
+    background-color: #f7f7f7;
     position: absolute;
-    margin-top: 13px;
+    top: 50px;
+    bottom: 20px;
+    max-height: 540px;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto; /*was previously margin: 0 auto;*/
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-.f-icon {
-    margin-left: 10px;
-}
- 
-.t-icon {
-    margin-left: 260px;
-}
-
-.fbsignin {
+.inputbtns {
+    display: block;
+    margin: 0 auto;
     text-align: center;
 }
 
-.twsignin {
+.inputbtns a {
+    margin: 0 auto;
     text-align: center;
 }
 
-#btn-fb {
- background: #3b5998;    
- border: 2px solid #3b5998;
- box-shadow: 0px 2px 0px 0px #3b5998;
- display: inline-block;
- margin-right: 10px;    
- 
+.inputbtns i {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    padding: 15px 10px;
+    margin: 0 25px;
 }
 
-#btn-twitter {
- background: #4099ff;  
- border: 2px solid #4099ff; 
- box-shadow: 0px 2px 0px 0px #4099ff;
- display: inline-block;
- margin-left: 10px;
+.fbbtn, .twbtn {
+    display: inline;
+    margin: 0 auto;
+    margin: 0 10px;
+}
+
+input[type=fb], input[type=twitter] {
+    color: white;
+    border:none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 200px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=fb] {
+    background-color: #3b5998;
+}
+
+input[type=twitter] {
+    background-color: #4099ff;
 }
 
 .dividers {
     font-weight: bold;
     text-align: center;
-    position: relative;
+    margin-top: 10px;
 }
 
-.email-signup {
-    align-content: left;
+.d1, .d2 {
+    height:3px;
+    width:255px;
+    background-color: #000000; 
+    display: inline-block;
+    margin-bottom: 4px;
 }
 
-.email-if, .pword-if {
-    height: 50px;
-    width: 200px;
-    border: 5px solid black;
+.d1 {
+    margin-right: 10px;
+}
+
+.d2 {
+    margin-left: 10px;
+}
+
+form {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+input[type=e-mail], input[type=pword] {
+    height: 40px;
+    width: 550px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    outline: none;
+    display:block;
+    margin: 0 auto;
+}
+
+label {
+    float: left;
+    height: 1.5em;
+    width: 10em;
+    margin-right: 1em;
+    margin-left: 0.75em;
+    text-align: left;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+input[value="E-mail address"], input[value="Password"] {
+   color: #999999;
+   text-align: left;
+   margin: 0 auto;
+}
+
+input[type=pword]:focus, 
+input[type=e-mail]:focus  {
+    background-color: lightblue;
+    color: black;
+    border: 2px solid #555;
+}
+
+input[type=startbtn] {
+    height: 40px;
+    width: 520px;
+    color: white;
+    text-align: center;
+    border:none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+    display: block;
+    background-color: #2db4f0;
+    margin: auto;
 }
 
 .currentaccount {
     font-weight: bold;
     color: #3abb92;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+.currentaccount a {
+    text-decoration: none;
+}
+
+
  /*FOOTER*/
 
  footer {
@@ -479,6 +632,7 @@ header nav ul > li > a {
    background-image: linear-gradient(to top,
    #54795e 0%, #54795e 50%, #73A481 50%, #73A481 100%);
    color: #FFFFFF;
+   border: 2px solid #54795e;
    height: 150px;
    position: relative;
    overflow: hidden;
@@ -486,11 +640,15 @@ header nav ul > li > a {
  }
 
  footer p, footer nav ul {
-   font-size:14px;
+   font-size:13px;
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
  }
+
+footer span {
+    font-weight: bold;
+}
 
  footer nav ul li {
    list-style-type: none;
@@ -668,7 +826,16 @@ header nav ul > li > a {
  }
 
 .active {
-    background-color: #6e9e7b;
+    background-color: #f7f7f7;
+    color: red;
+    padding: 0 35px;
+    margin: 0 -11px;
+    box-sizing: border-box;
+}
+
+.active span {
+    color: #6e9e7b;
+    font-weight: bold;
 }
 
 /* LEFT NAVBAR SETTINGS */
@@ -699,7 +866,7 @@ header nav ul > li > a {
    margin:0 0 0 10px;
  }
 
- .left-nav .settings a {
+ .left-nav .settings span {
    color:#F7F7F7;
    text-decoration: none;
    text-align: right;
@@ -759,23 +926,20 @@ header nav ul > li > a {
 
 #add-box {
     border: 5px solid #2db4F0;
-    margin:0 25px 0 0;
-    text-decoration-color: #2db4F0;
-    text-decoration: none;
-    text-align: center; 
-    font-size: 48px;
-    font-weight: bold;
-    font-family: "Raleway", Tahoma, sans-serif;
-    margin: auto;
+    position: relative;
 }
 
-#add-box > a {
+.add-box {
+   margin: auto;
    color: #2db4F0;
    text-decoration: none;
    text-align: center; 
    font-weight: bold;
+   font-size: 48px;
    font-family: "Raleway", Arial, sans-serif;
-   margin-top: 100px 20px;
+   position: absolute;
+   top: 30px; 
+   right: 45px;
 }
 
 /*DASHBOARD MEDIA QUERIES*/
